@@ -20,7 +20,7 @@ export const sidebarData = {
             items: [
                 {
                     title: "Dashboard",
-                    url: "/",
+                    url: "/dashboard",
                     icon: LayoutDashboard,
                 },
                 {
@@ -35,27 +35,27 @@ export const sidebarData = {
                 },
                 {
                     title: "Departments",
-                    url: "/chats",
+                    url: "/departments",
                     icon: ShieldHalf,
                 },
                 {
                     title: "Roles",
-                    url: "/chats",
+                    url: "/roles",
                     icon: KeyRound,
                 },
                 {
                     title: "Presences",
-                    url: "/chats",
+                    url: "/presences",
                     icon: CalendarCheck,
                 },
                 {
                     title: "Payrolls",
-                    url: "/chats",
+                    url: "/payrolls",
                     icon: DollarSign,
                 },
                 {
                     title: "Leave Requests",
-                    url: "/chats",
+                    url: "/leave-requests",
                     icon: SquareArrowOutUpLeft,
                 },
             ],

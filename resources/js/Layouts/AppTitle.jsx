@@ -27,7 +27,7 @@ export function AppTitle() {
                         >
                             <span className="font-bold truncate">HRIS</span>
                         </Link>
-                        <ToggleSidebar />
+                        {/* <ToggleSidebar /> */}
                     </div>
                 </SidebarMenuButton>
             </SidebarMenuItem>

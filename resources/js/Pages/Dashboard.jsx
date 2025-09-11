@@ -1,11 +1,10 @@
-import { SidebarProvider } from "@/Components/ui/sidebar";
-import { AppSidebar } from "@/Layouts/AppSidebar";
+import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 
 export default function Dashboard() {
     return (
-        <SidebarProvider>
-            <AppSidebar />
-        </SidebarProvider>
+        <AuthenticatedLayout>
+            <h1>Dashboard</h1>
+        </AuthenticatedLayout>
         // <AuthenticatedLayout
         //     header={
         //         <h2 className="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
