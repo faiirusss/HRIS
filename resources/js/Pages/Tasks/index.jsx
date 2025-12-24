@@ -32,8 +32,12 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import TasksPrimaryButtons from "./components/TasksPrimaryButtons";
+import { Link, router } from "@inertiajs/react";
 
 const TasksPage = ({ tasks }) => {
+    // const [tasks, setTasks] = useState([])
+
+    console.log(tasks)
     const [position, setPosition] = useState("bottom");
 
     return (
@@ -54,7 +58,8 @@ const TasksPage = ({ tasks }) => {
                             Here&apos;s a list of your tasks for this month!
                         </p>
                     </div>
-                    <TasksPrimaryButtons />
+                    <Link href={'/tasks/create'}><Button>Create</Button></Link>
+                    {/* <TasksPrimaryButtons /> */}
                 </div>
                 <div className="flex-1 px-4 py-1 -mx-4 overflow-auto lg:flex-row lg:space-y-0 lg:space-x-12">
                     <div className="border rounded-md ">
