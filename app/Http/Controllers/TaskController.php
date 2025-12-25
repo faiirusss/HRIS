@@ -11,10 +11,10 @@ class TaskController extends Controller
 {
     public function index()
     {
-        $tasks = Task::with('employee')->get();
-        return Inertia::render('Tasks/index', [
-            'tasks' => $tasks
-        ]);
+     $tasks = Task::with('employee')->get();
+     return Inertia::render('Tasks/index', [
+      'tasks' => $tasks
+     ]);
     }
 
     public function create()
