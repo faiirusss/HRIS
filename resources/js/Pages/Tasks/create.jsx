@@ -22,9 +22,9 @@ import { Link, router } from "@inertiajs/react"
 import { useState } from "react"
 import { ChevronDownIcon, CircleDashed, Loader } from "lucide-react"
 import { Controller, useForm } from "react-hook-form"
-import { Header } from "@/Layouts/Header"
 import axios from "axios"
 import { toast } from "sonner"
+import { Header } from "@/Components/Header"
 
 const STATUS_TASK = [
  { name: "Pending", icon: CircleDashed },
@@ -94,9 +94,7 @@ const CreateTaskPage = (props) => {
 
  return (
   <AuthenticatedLayout>
-   <Header fixed>
-    <h1>Task</h1>
-   </Header>
+   <Header title={"Task"} />
 
    <main className="w-full px-4 py-6 mx-auto max-w-5xl">
     <Card className="my-5">

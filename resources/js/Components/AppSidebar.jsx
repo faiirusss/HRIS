@@ -1,10 +1,6 @@
 import {
  ArrowUpCircleIcon,
- BarChartIcon,
- FolderIcon,
- LayoutDashboardIcon,
- ListIcon,
- UsersIcon
+ LayoutDashboardIcon
 } from "lucide-react"
 
 import { NavMain } from "@/Components/NavMain"
@@ -18,6 +14,7 @@ import {
  SidebarMenuButton,
  SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import { IconBuildingSkyscraper, IconCashRegister, IconChartColumn, IconListCheck, IconShieldLock, IconUsersGroup, IconUserUp } from "@tabler/icons-react"
 
 const data = {
  user: {
@@ -34,37 +31,37 @@ const data = {
   {
    title: "Tasks",
    url: "/tasks",
-   icon: ListIcon,
+   icon: IconListCheck,
   },
   {
    title: "Employees",
    url: "/employees",
-   icon: BarChartIcon,
+   icon: IconUsersGroup,
   },
   {
    title: "Departments",
    url: "/departments",
-   icon: FolderIcon,
+   icon: IconBuildingSkyscraper,
   },
   {
    title: "Roles",
    url: "/roles",
-   icon: UsersIcon,
+   icon: IconShieldLock,
   },
   {
    title: "Presences",
    url: "/presences",
-   icon: UsersIcon,
+   icon: IconChartColumn,
   },
   {
    title: "Payrolls",
    url: "/payrolls",
-   icon: UsersIcon,
+   icon: IconCashRegister,
   },
   {
    title: "Leave Request",
    url: "/leave-request",
-   icon: UsersIcon,
+   icon: IconUserUp,
   },
  ],
 }

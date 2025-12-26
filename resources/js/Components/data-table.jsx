@@ -220,7 +220,7 @@ export function DataTable({
         <TableRow key={headerGroup.id}>
          {headerGroup.headers.map((header) => {
           return (
-           <TableHead key={header.id} colSpan={header.colSpan}>
+           <TableHead key={header.id} colSpan={header.colSpan} className="pl-4">
             {header.isPlaceholder
              ? null
              : flexRender(header.column.columnDef.header, header.getContext())}
@@ -235,7 +235,7 @@ export function DataTable({
         table.getRowModel().rows.map((row) => (
          <TableRow key={row.id}>
           {row.getVisibleCells().map((cell) => (
-           <TableCell key={cell.id}>
+           <TableCell key={cell.id} className="pl-4">
             {flexRender(cell.column.columnDef.cell, cell.getContext())}
            </TableCell>
           ))}
